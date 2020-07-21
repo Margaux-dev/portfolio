@@ -469,11 +469,11 @@ body{
 	
 	/* WEBSITE TITLE*/
 	#website-title{
-		margin: -120px 0 -180px 0;
+		margin: -120px 0 0 0;
 	}
 	#website-title h1{
 		font-size: 4.4rem;
-		letter-spacing: 1px;
+		letter-spacing: 0;
 	}
 	#job-title{
 		font-size: 2.8rem;
