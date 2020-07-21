@@ -626,16 +626,71 @@ body{
 
 @media screen and (max-height: 700px) {
 	#website-title{
-		margin: -130px 0 -30px 0;
+		margin: -140px 0 0 0 !important;
+		font-weight: 100;
+		letter-spacing: 0;
 	}
 	#website-title h1{
-		font-size: 4rem;
+		font-size: 3.6rem !important;
 	}
 	#job-title{
-		font-size: 2.5rem;
+		font-size: 2.4rem;
+	}
+	#game-start{
+		top: 120px;
+	}
+	.grid{
+		width: 756px;
+		height: 364px;
+	}
+	.grid div{
+		width: 13.5px;
+		height: 13.5px;
+	}
+	.dot::after{
+		top: 5.5px;
+		left: 5.5px;
+	}
+	.project::after, .openedproject::after{
+		height: 28px;
+		width: 28px;
+		top: -8px;
+		left: -4px;
+	}
+				/* LIL MARGAUX */
+	.lil-margaux::after{
+		left: -9px;
+		width: 33px;
+		height: 33px;
+	}
+			/* PROJECTS IN GAME */
+	#project-div{
+		top: 70px;
+		padding: 15px 30px;
+	}
+	#project-title{
+		font-size: 2.2rem;
+	}
+	#project-img img{
+		width: 300px;
+	}
+	#project-description{
+		margin: 0px auto;
+		font-size: 1.6rem;
+	}
+	#visit-button-div{
+		margin: 10px 6px 5px 6px;
+	}
+	.visit-button{
+		width: 180px;
+		height: 42px;
+		border: none;
+	}
+	.visit-button a{
+		font-size: 2rem;
 	}
 	#language-footer{
-		margin-top: 0;
+		margin-top: 10px;
 		font-size: 2rem;
 	}
 			/* SKIP THE GAME */
@@ -652,7 +707,7 @@ body{
 	}
 			/* SCORE DISPLAY */
 	#score-display{
-		margin-top: 0;
+		margin-top: 20px;
 		font-size: 1.9rem;
 	}
 }
