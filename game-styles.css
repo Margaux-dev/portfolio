@@ -477,6 +477,7 @@ body{
 	}
 	#job-title{
 		font-size: 2.8rem;
+		margin-bottom: -20px;
 	}
 	.menu{
 		z-index: 2000; 		
