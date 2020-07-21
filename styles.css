@@ -1438,7 +1438,7 @@ header{
 	}
 }
 
-@media screen and (max-height:790px){
+@media screen and (max-height: 850px){
 	 	#navbar{
  		margin-top: 100px;
  	}
