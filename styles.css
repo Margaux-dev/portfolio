@@ -1414,7 +1414,7 @@ header{
 	}
 }
 
-@media screen and (max-height: 825px){
+/*@media screen and (max-height: 825px){
 	.menu{
 		width: 100vw;
 		height: 100vh;
@@ -1437,7 +1437,7 @@ header{
 		margin: 2px;
 		font-size: 3.5rem;
 	}	
-}
+}*/
 
 
 
