@@ -55,8 +55,8 @@ header{
 	right: 0;
 	background-image: var(--fond);
 	-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1437,6 +1437,27 @@ header{
 		width: 50px;
 	}
 }
+
+@media screen and (max-height:790px){
+	 	#navbar{
+ 		margin-top: 100px;
+ 	}
+ 	.menu ul li{
+ 		padding: 5px 0;
+ 	}
+ 	.menu ul li a{
+ 		font-size: 3rem;
+ 		letter-spacing: 1px;
+ 	}
+ 	#language{
+ 		font-size: 2.2rem;
+ 	}
+ 	#social-medias li a{
+ 		margin: 2px;
+ 		font-size: 3.5rem;
+ 	}
+
+
 
 
 
