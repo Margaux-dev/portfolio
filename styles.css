@@ -1317,6 +1317,29 @@ header{
 		bottom: 15%;
 		font-size: 30px;
 	}
+	/* NAVBAR */
+		.menu{
+ 		width: 100vw;
+ 		height: 100vh;
+ 		padding: 0;
+ 	}
+ 	#navbar{
+ 		margin-top: 100px;
+ 	}
+ 	.menu ul li{
+ 		padding: 5px 0;
+ 	}
+ 	.menu ul li a{
+ 		font-size: 3rem;
+ 		letter-spacing: 1px;
+ 	}
+ 	#language{
+ 		font-size: 2.2rem;
+ 	}
+ 	#social-medias li a{
+ 		margin: 2px;
+ 		font-size: 3.5rem;
+ 	}
 	/* SERVICES */
 	.service-left, .service-right{
 		margin: auto 0;
@@ -1413,12 +1436,6 @@ header{
 		width: 50px;
 	}
 }
-
-
-
-
-
-
 
 
 
