@@ -48,16 +48,16 @@ header{
 }
 .white-div::before{
 	content:"";
-	width: 100%;
-	height: 100vh;
+	width: 100vw;
+	height: 100%;
 	position: absolute;
 	top: 0%;
 	left: 0%;
 	background-image: var(--fond);
 	background-attachment: fixed;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    	-moz-background-size: cover;
+    	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
