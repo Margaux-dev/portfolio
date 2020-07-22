@@ -701,10 +701,11 @@ header{
 	height: 45px;
 	position: absolute;
 	top: 63px;
-	display: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--main-color);
+	color: transparent;
+	background-color: transparent;
 	border-radius: 20px;
 	z-index: 10;
 }
@@ -718,13 +719,22 @@ header{
 	border: none;
 }
 .works-img:hover .works-button{
-	display: flex;
+	color: var(--menu);
+	background-color: var(--main-color);
 }
 .works-button a:hover{
 	-webkit-transform: scale(1.02);
 	-moz-transform: scale(1.02);
 	transform: scale(1.02);
 	padding: 6px 1px;
+}
+.works-img:focus .works-button{
+	color: var(--menu);
+	background-color: var(--main-color);
+}
+.works-button a:focus{
+	color: var(--menu);
+	background-color: var(--main-color);
 }
 #go-to-about{
 	position: absolute;
@@ -1438,9 +1448,9 @@ header{
 	}
 }
 
-@media screen and (max-height: 950px){
+@media screen and (max-height:1000px){
 	 	#navbar{
- 		margin-top: 100px;
+ 		margin-top: 90px;
  	}
  	.menu ul li{
  		padding: 5px 0;
