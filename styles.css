@@ -1410,6 +1410,14 @@ header{
 		width: 260px;
 		height: 116.6px;
 	}
+	.works-img:hover::before{
+		content: "";
+		width: 260px;
+		height: 117px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
 	.works-img img{
 		width: 300px;
 		height: 156.6px;
