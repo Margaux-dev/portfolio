@@ -1306,14 +1306,43 @@ header{
 		padding: 0 20px;
 		font-size: 2.8rem;
 		font-weight: 100;
+	}#portfolio-main{
+		margin-top: 80px;
 	}
 	/* HEADER */
+	#top-header{
+		align-items: center;
+		height: 80px;
+		padding: 0 20px;
+	}
+	#logo2{
+		width: 63.64px;
+		height: 60px
+	}
 	#website-title2{
 		display: none;
 	}
+	#menuDisplay img{
+		height: 40px;
+	}
+	.menu-display2{
+		right: 20px;
+		height: 40px;
+		margin: 0;
+	}
+	/* NAVBAR */
+	#closeMenu{
+		right: 20px;
+	}
+	#closeMenu img{
+		height: 40px;
+	}
+	.close-menu2{
+		top: 20px;
+	}
 	/* HOME */
 	#home{
-		height: calc(95vh - 110px);
+		height: calc(95vh - 90px);
 	}
 	#home h1{
 		font-size: 3rem;
