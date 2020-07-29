@@ -344,16 +344,16 @@ function gameOn () {
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/FCC_Survey_Form/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 948:
-				projectTitle.innerHTML = "NOMBRES ↔︎ CHIFFRES ROMAINS";
-				projectImg.innerHTML = "<img src=\"images/convertNum\" alt=\"Capture d'écran de la web app Convertisseur nombres - chiffres romains\">";
-				projectDescription.innerHTML = "Une application web qui convertit instantanément les nombres et chiffres romains et vice versa.";
-				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/Number-RomanNumeral-Converter/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
+				projectTitle.innerHTML = "RESTAURANT PAST'A MAMMA";
+				projectImg.innerHTML = "<img src=\"images/restaurant-pasta-mamma.jpg\" alt=\"Capture d'écran de la page web Past'a Mamma\">";
+				projectDescription.innerHTML = "Un site one-page pour un restaurant familial.";
+				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/restaurant-pasta-mamma/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 1085:
-				projectTitle.innerHTML = "MÉTÉO LOCALE EN TEMPS RÉEL";
-				projectImg.innerHTML = "<img src=\"images/meteoImg\" alt=\"Capture d'écran de la web app météo locale en direct\">";
-				projectDescription.innerHTML = "Un application web qui vous donne la météo du lieu où vous vous trouvez, en direct.<br>Pour que l'app fonctionne, votre navigateur web doit avoir l'autorisation d'accéder à votre localisation.";
-				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/weather-app/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
+				projectTitle.innerHTML = "PASSION SURF";
+				projectImg.innerHTML = "<img src=\"images/passionsurf.jpg\" alt=\"Capture d'écran du site web Passion Surf\">";
+				projectDescription.innerHTML = "Un site one-page pour une école de surf.";
+				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/passion-surf/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 1381:
 				projectTitle.innerHTML = "MEMORY GAME";
@@ -512,7 +512,7 @@ restartButton.addEventListener("click", () => {
 // SHOW TRADITIONNAL PORTFOLIO
 function showPortfolio (e) {
 	e.preventDefault();
-	document.location.href = "portfolio.html"
+	document.location.href = "https://www.margauxdev.com/portfolio"
 }
 skipButton.addEventListener("click", showPortfolio);
 skipTheGame.addEventListener("click", showPortfolio);
