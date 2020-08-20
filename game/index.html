@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Oh, salut ! Merci de venir voir mon code ! Il est sur Github, ce sera plus simple à regarder : https://github.com/Margaux-dev/portfolio 
+	Il a été entièrement "fait main", sans CMS ou autre générateur de code. Bon, j'avoue, j'ai parfois dû interroger StackOverflow... Mais qui ne le fait pas ? ;)
+	N'hésitez pas à m'envoyer un message pour me dire ce que vous en pensez, ou si jamais vous avez questions. À bientôt !-->
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Margaux Darriberouge - Développeuse Web Front-End</title>
+		<meta name="description" content="Développeuse Web & UI/UX Designer freelance - Landes et Pays Basque. Création de sites internet, webdesign, référencement SEO, maintenance et conseil.">
+			<!-- Open Graph Meta Tags-->
+		<meta property="og:url" content="https://www.margauxdev.com">
+		<meta property="og:title" content="Margaux Darriberouge - Développeuse Web Front-End">
+		<meta property="og:site_name" content="Margaux Darriberouge - Développeuse Web Front-End">
+		<meta property="og:description" content="Développeuse Web & UI/UX Designer freelance - Landes et Pays Basque. Création de sites internet, webdesign, référencement SEO, maintenance et conseil.">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="fr-FR">
+		<meta property="og:image" content="https://margaux-dev.github.io/portfolio/images/siteImg.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1365">
+		<meta property="og:image:height" content="716.3">
+		<meta property="og:image:alt" content="Capture d'écran du site Margaux Darriberouge - Développeuse Web Front-End">
+			<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Margaux Darriberouge - Développeuse Web Front-End">
+		<meta name="twitter:description" content="Développeuse Web & UI/UX Designer freelance - Landes et Pays Basque. Création de sites internet, webdesign, référencement SEO, maintenance et conseil.">
+		<meta name="twitter:site" content="https://www.margauxdev.com">
+		<meta name="twitter:image" content="https://margaux-dev.github.io/portfolio/images/siteImg.png">
+			<!-- Dublin Core -->
+		<meta name="dc.title" content="Margaux Darriberouge - Développeuse Web Front-End">
+		<meta name="dc.description" content="Développeuse Web & UI/UX Designer freelance - Landes et Pays Basque. Création de sites internet, webdesign, référencement SEO, maintenance et conseil.">
+		<meta name="dc.relation" content="https://www.margauxdev.com/">
+		<meta name="dc.source" content="https://www.margauxdev.com/">
+		<meta name="dc.language" content="fr_fr">
+			<!-- Other SEO -->
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<meta name="robots" content="noydir">
+		<meta name="google" content="nositelinkssearchbox">
+		<meta name="google" content="notranslate">
+			<!-- Tags for Mobiles -->
+		<link rel="apple-touch-icon" href="/images/logo_bleu.png">
+		<link rel="apple-touch-startup-image" href="/images/logo_bleu.png">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="format-detection" content="telephone=no">		
+			<!-- Stylesheets and scripts-->
+		<link rel="preload" href="/styles.css" as="style">
+		<link rel="stylesheet" href="/styles.css">
+		<link rel="stylesheet" href="/game-styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<header id="top-header">
+			<a href="/index.html" aria-label="Aller à l'Accueil" id="logo-link"><img src="/images/logo_bleu.png" alt="Logo bleu, chat qui fait un clin d'oeil" id="logo"></a>
+			<div id="website-title">
+				<h1>Margaux Darriberouge</h1>
+				<p>Stratégies Numériques</p>
+			</div>
+			<button id="menuDisplay" class="menu-display" tabindex="1"><img src="/images/menu.png" alt="Bouton affichage menu"></button>
+			<nav class="menu" style="display: none">
+				<button id="closeMenu" tabindex="15"><img src="/images/close.png" alt="Fermer le menu"></button>
+				<ul id="navbar">
+					<li class="nav-links"><a href="/index.html" tabindex="2">Accueil</a></li>
+					<li class="nav-links"><a href="#go-to-services" tabindex="3">Services</a></li>
+					<li class="nav-links"><a href="#go-to-skills" tabindex="4">Compétences</a></li>
+					<li class="nav-links"><a href="#go-to-works" tabindex="5">Travaux</a></li>
+					<li class="nav-links"><a href="#go-to-about" tabindex="6">À propos</a></li>
+					<li class="nav-links"><a href="#contact" tabindex="7">Contact</a></li>
+				</ul>
+				<div id="language" aria-label="Langue">
+					<a href="/game/index.html" id="lang-FR" tabindex="8">FR</a>
+					<span>|</span>
+					<a href="http://www.en.margauxdev.com/game" id="lang-EN" tabindex="9">EN</a>
+				</div>
+				<ul id="social-medias">
+					<li class="social-links"><a href="https://codepen.io/Margaux-dev" aria-label="Lien vers mon compte Codepen" target="_blank" tabindex="10"><i class="fab fa-codepen" aria-hidden="true"></i></a></li>
+					<li class="social-links"><a href="https://github.com/Margaux-dev" aria-label="Lien vers mon profil Github" target="_blank" tabindex="11"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+					<li class="social-links"><a href="https://www.linkedin.com/in/margaux-darriberouge/" aria-label="Lien vers mon profil LinkedIn" target="_blank" tabindex="12"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+					<li class="social-links"><a href="https://stackoverflow.com/users/13613563/margaux-dev?tab=profile" aria-label="Lien vers mon profil StackOverflow" target="_blank" tabindex="13"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li>
+				</ul>
+				<div id="legal">
+					<a href="/legal.html" tabindex="14">Mentions légales</a><div id="copyright"> - © <span id="copyright-date"></span></div>
+				</div>
+			</nav>
+		</header>
+		
+		<div id="main-div">
+			<div id="game-div">
+				<div id="game-start">
+					<h2 id="game-start-title">PORTFOLIO INTERACTIF</h2>
+					<p id="game-start-p1" class="game-start-instructions">Découvrez mes derniers travaux avec ce mini-jeu !</p>
+					<p id="game-start-p2" class="game-start-instructions">Attention aux bugs : si vous vous faites piquer, vous devrez tout recommencer !</p>
+					<button id="start" class="game-button" tabindex="16">Jouer</button>
+					<button class="game-button" id="skip" tabindex="17">Passer le jeu</button>
+				</div>
+				<div id="project-div" style="display: none">
+					<button id="close-project" tabindex="19"><img src="/images/close.png" alt="Fermer le projet"></button>
+					<h2 id="project-title"></h2>
+					<div id="project-img"></div>
+					<p id="project-description"></p>
+					<div id="visit-button-div">
+						<div class="visit-button" tabindex="18"></div>
+					</div>
+				</div>
+				<div id="game-message-div" style="display: none">
+					<h2 class="game-message"></h2>
+					<p id="game-message-text"></p>
+					<button id="restart-button" tabindex="20">REJOUER</button>
+					<button id="know-more-button" style="display: none" tabindex="21">En savoir PLUS</button>
+				</div>
+				<div class="grid"></div>
+				<h3 id="score-display" style="display: none">Score: <span id="score">0</span></h3>
+			</div>
+			<button id="game-button-skip" style="display: none" tabindex="22">Passer le jeu</button>
+			<div id="language-footer" aria-label="Langue">
+				<a href="/index.html" id="lang-FR-footer" tabindex="8">FR</a>
+				<span>|</span>
+				<a href="http://www.en.margauxdev.com" id="lang-EN-footer" tabindex="9">EN</a>
+			</div>
+		</div>
+		
+		
+		<footer>
+			<a aria-label="Contact par mail" id="contact-mail" href="mailto:contact@margauxdev.com" target="_blank" tabindex="23"><img src="/images/contact.png" alt="Contact"></a>
+		</footer>
+		<script src="/app.js"></script>
+		<script src="/script.js"></script>
+	</body>
+</html>
