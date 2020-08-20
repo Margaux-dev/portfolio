@@ -1,7 +1,8 @@
+
 /* GENERAL */
 :root{
-	--img: url("images/persoFace.png");
-	--img2: url("images/persoFace.png");
+	--img: url("/images/persoFace.png");
+	--img2: url("/images/persoFace.png");
 	--rot: scaleY(1);
 	--main-color: #151D2E;
 	--lg-blue: #21345C;
@@ -11,43 +12,19 @@ body{
 	overflow: hidden;
 }
 
-
-
-/* WEBSITE TITLE*/
-#logo{
-	width: 106px;
-	height: 100px;
-}
-#website-title{
+#main-div{
 	width: 100%;
-	margin: -85px 0 30px 0;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	text-align: center;
-	color: var(--menu);
 }
-#website-title h1{
-	font-size: 5rem;
-	letter-spacing: 2px;
-}
-#job-title{
-	margin-top: -5px;
-	font-size: 3rem;
-	font-weight: 100;
-}
-#menuDisplay{
-	position: fixed;
-	right: 60px;
-	height: 48px;
-	align-self: center;
-	background-color: transparent;
-	border: none;
-}
-#menuDisplay img{
-	height: 46px;
-	cursor: pointer;
-}
+
 
 
 
@@ -66,15 +43,13 @@ body{
 	z-index: 1000;
 }
 #game-start-title{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 2.9rem;
 	text-transform: uppercase;
-	
 }
 .game-start-instructions{
-	margin: 12px 0;
-	font-family: "Hoefler Text", "Times New Roman", serif;
-	font-size: 1.8rem;
+	margin-bottom: 12px;
+	font-size: 2rem;
 }
 .game-button{
 	width: 180px;
@@ -84,7 +59,7 @@ body{
 	text-transform: uppercase;
 	color: var(--menu);
 	font-family: inherit;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	background-color: var(--main-color);
 	border: 1px solid var(--main-color);
 	border-radius: 20px;
@@ -151,10 +126,10 @@ body{
 	left: -3px;
 }
 .project::after{
-	background-image: url("images/computer_off.gif");
+	background-image: url("/images/computer_off.gif");
 }
 .openedproject::after{
-	background-image: url("images/computer_on.gif");
+	background-image: url("/images/computer_on.gif");
 }
 .empty{
 	background-color: var(--main-color);
@@ -284,13 +259,13 @@ body{
 	width: 180px;
 	height: 45px;
 	margin: 1vh auto 0px auto;
-	padding: 5px 15px;
 	display: flex;
-	text-align: center;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
 	color: var(--main-color);
 	font-family: inherit;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	background-color: var(--menu);
 	border: 1px solid var(--menu);
 	border-radius: 20px;
@@ -341,7 +316,6 @@ body{
 }
 #project-description{
 	margin: 15px auto;
-	font-family: "Hoefler Text", "Times New Roman", serif;
 	font-size: 1.8rem;
 	text-align: center;
 }
@@ -399,12 +373,10 @@ body{
 }
 #game-message-text{
 	margin: 15px 25px;
-	font-family: "Hoefler Text", "Times New Roman", serif;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	text-align: center;
 }
 #restart-button, #know-more-button{
-	height: 50px;
 	margin: 10px;
 	padding: 5px;
 	display: inline;
@@ -434,17 +406,16 @@ body{
 }
 
 
-
 /* LANGUAGE IN THE FOOTER */
 #language-footer{
 	width: 100%;
-	margin-top: 1vh;
+	margin-top: 5px;
 	display: flex;
 	justify-content: center;
 	color: var(--menu);
 	font-size: 2.8rem;
 	font-weight: 100;
-	z-index: 0;
+
 }
 #language-footer a{
 	color: inherit;
@@ -466,22 +437,6 @@ body{
 
 /* RESPONSIVE */
 @media screen and (max-width: 1250px), screen and (max-height: 900px) {
-	
-	/* WEBSITE TITLE*/
-	#website-title{
-		margin: -85px 0 0 0;
-	}
-	#website-title h1{
-		font-size: 4.7rem;
-		letter-spacing: 1px;
-	}
-	#job-title{
-		font-size: 2.8rem;
-	}
-	.menu{
-		z-index: 2000; 		
-	}
-
 	/* GAME */
 			/* GAME START DIV */
 	#game-start{
@@ -539,17 +494,6 @@ body{
 }
 
 @media screen and (max-width: 910px){
-	
-	/* WEBSITE TITLE*/
-	#website-title h1{
-		font-size: 3.4rem;
-		font-weight: 100;
-		letter-spacing: 0;
-	}
-	#job-title{
-		font-size: 2.3rem;
-	}
-
 	/* GAME */
 			/* GAME START DIV */
 	#game-start{
@@ -612,12 +556,6 @@ body{
 }
 
 @media screen and (max-height: 800px) {
-	#website-title{
-		margin: -125px 0 0 0;
-	}
-	#website-title h1{
-		font-size: 4.2rem;
-	}
 	#language-footer{
 		margin-top: 0.8vh;
 		font-size: 2.4rem;
@@ -625,17 +563,6 @@ body{
 }
 
 @media screen and (max-height: 700px) {
-	#website-title{
-		margin: -140px 0 0 0 !important;
-		font-weight: 100;
-		letter-spacing: 0;
-	}
-	#website-title h1{
-		font-size: 3.6rem !important;
-	}
-	#job-title{
-		font-size: 2.4rem;
-	}
 	#game-start{
 		top: 120px;
 	}
