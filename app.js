@@ -147,8 +147,8 @@ function gameOn () {
 					//Move left
 					if (margauxCurrentIndex % GRID_WIDTH !== 0 && !SQUARES[margauxCurrentIndex - 1].classList.contains("wall") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex -= 1;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoSide1.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoSide2.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoSide1.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoSide2.png\")");
 						document.documentElement.style.setProperty("--rot", "scaleX(1)");
 					}
 					break;
@@ -156,16 +156,16 @@ function gameOn () {
 					// Move up
 					if (margauxCurrentIndex - GRID_WIDTH >= 0 && !SQUARES[margauxCurrentIndex - GRID_WIDTH].classList.contains("wall") && !SQUARES[margauxCurrentIndex - GRID_WIDTH].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex -= GRID_WIDTH;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoBottom.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoBottom.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoBottom.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoBottom.png\")");
 					}
 					break;
 				case 39:
 					// Move right
 					if (margauxCurrentIndex % GRID_WIDTH < GRID_WIDTH - 1 && !SQUARES[margauxCurrentIndex + 1].classList.contains("wall") && !SQUARES[margauxCurrentIndex].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex += 1;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoSide1.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoSide2.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoSide1.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoSide2.png\")");
 						document.documentElement.style.setProperty("--rot", "scaleX(-1)");
 					}
 					break;
@@ -173,8 +173,8 @@ function gameOn () {
 					// Move down
 					if (margauxCurrentIndex + GRID_WIDTH < GRID_WIDTH * GRID_WIDTH && !SQUARES[margauxCurrentIndex + GRID_WIDTH].classList.contains("wall") && !SQUARES[margauxCurrentIndex + GRID_WIDTH].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex += GRID_WIDTH;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoFace.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoFace.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoFace.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoFace.png\")");
 					}
 					break;
 			}
@@ -225,16 +225,16 @@ function gameOn () {
 					// Swipe left
 					if (margauxCurrentIndex % GRID_WIDTH !== 0 && !SQUARES[margauxCurrentIndex - 1].classList.contains("wall") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex -= 1;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoSide1.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoSide2.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoSide1.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoSide2.png\")");
 						document.documentElement.style.setProperty("--rot", "scaleX(1)");
 					}
 				} else {
 					// Swipe right
 					if (margauxCurrentIndex % GRID_WIDTH < GRID_WIDTH - 1 && !SQUARES[margauxCurrentIndex + 1].classList.contains("wall") && !SQUARES[margauxCurrentIndex].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex += 1;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoSide1.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoSide2.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoSide1.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoSide2.png\")");
 						document.documentElement.style.setProperty("--rot", "scaleX(-1)");
 					}
 				}
@@ -243,15 +243,15 @@ function gameOn () {
 					// Swipe Up
 					if (margauxCurrentIndex - GRID_WIDTH >= 0 && !SQUARES[margauxCurrentIndex - GRID_WIDTH].classList.contains("wall") && !SQUARES[margauxCurrentIndex - GRID_WIDTH].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex -= GRID_WIDTH;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoBottom.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoBottom.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoBottom.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoBottom.png\")");
 					}
 				} else {
 					// Swipe down
 					if (margauxCurrentIndex + GRID_WIDTH < GRID_WIDTH * GRID_WIDTH && !SQUARES[margauxCurrentIndex + GRID_WIDTH].classList.contains("wall") && !SQUARES[margauxCurrentIndex + GRID_WIDTH].classList.contains("bug-lair") && !SQUARES[margauxCurrentIndex - 1].classList.contains("bug-lair-block")) {
 						margauxCurrentIndex += GRID_WIDTH;
-						document.documentElement.style.setProperty("--img", "url(\"images/persoFace.png\")");
-						document.documentElement.style.setProperty("--img2", "url(\"images/persoFace.png\")");
+						document.documentElement.style.setProperty("--img", "url(\"/images/persoFace.png\")");
+						document.documentElement.style.setProperty("--img2", "url(\"/images/persoFace.png\")");
 					}
 				}
 			}
@@ -321,43 +321,43 @@ function gameOn () {
 		switch (index) {
 			case 94:
 				projectTitle.innerHTML = "ROBBIE THE CONVERTER ROBOT";
-				projectImg.innerHTML = "<img src=\"images/robbieImg\" alt=\"Capture d'écran de la web app Robbie The Robot\">";
+				projectImg.innerHTML = "<img src=\"/images/robbieImg\" alt=\"Capture d'écran de la web app Robbie The Robot\">";
 				projectDescription.innerHTML = "Un convertisseur qui transpose votre texte en code binaire.";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/binary-converter/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 171:
 				projectTitle.innerHTML = "ASTEROIDS : LE JEU";
-				projectImg.innerHTML = "<img src=\"images/asteroidsImg\" alt=\"Capture d'écran du jeu Asteroids\">";
+				projectImg.innerHTML = "<img src=\"/images/asteroidsImg\" alt=\"Capture d'écran du jeu Asteroids\">";
 				projectDescription.innerHTML = "Asteroids, réplique sur célèbre jeu d'arcade éponyme.";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/asteroids-game/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 299:
 				projectTitle.innerHTML = "TO DO LIST";
-				projectImg.innerHTML = "<img src=\"images/todoImg\" alt=\"Capture d'écran de la web app To Do List\">";
+				projectImg.innerHTML = "<img src=\"/images/todoImg\" alt=\"Capture d'écran de la web app To Do List\">";
 				projectDescription.innerHTML = "Une application web qui vous permet de noter et de garder en mémoire votre liste de choses à faire.";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/ToDoList/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 822:
 				projectTitle.innerHTML = "FORMULAIRE DE SONDAGE";
-				projectImg.innerHTML = "<img src=\"images/surveyImg\" alt=\"Capture d'écran du formulaire de sondage\">";
+				projectImg.innerHTML = "<img src=\"/images/surveyImg\" alt=\"Capture d'écran du formulaire de sondage\">";
 				projectDescription.innerHTML = "Un modèle de formulaire de sondage sur une page, sur le thème de la série \"The Good Place\"";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/FCC_Survey_Form/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 948:
 				projectTitle.innerHTML = "RESTAURANT PAST'A MAMMA";
-				projectImg.innerHTML = "<img src=\"images/restaurant-pasta-mamma.jpg\" alt=\"Capture d'écran de la page web Past'a Mamma\">";
+				projectImg.innerHTML = "<img src=\"/images/restaurant-pasta-mamma.jpg\" alt=\"Capture d'écran de la page web Past'a Mamma\">";
 				projectDescription.innerHTML = "Un site one-page pour un restaurant familial.";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/restaurant-pasta-mamma/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 1085:
 				projectTitle.innerHTML = "PASSION SURF";
-				projectImg.innerHTML = "<img src=\"images/passionsurf.jpg\" alt=\"Capture d'écran du site web Passion Surf\">";
+				projectImg.innerHTML = "<img src=\"/images/passionsurf.jpg\" alt=\"Capture d'écran du site web Passion Surf\">";
 				projectDescription.innerHTML = "Un site one-page pour une école de surf.";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/passion-surf/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
 			case 1381:
 				projectTitle.innerHTML = "MEMORY GAME";
-				projectImg.innerHTML = "<img src=\"images/memoryImg\" alt=\"Capture d'écran de la web app memory game\">";
+				projectImg.innerHTML = "<img src=\"/images/memoryImg\" alt=\"Capture d'écran de la web app memory game\">";
 				projectDescription.innerHTML = "Un jeu simple et mignon pour entraîner sa mémoire durant l'été !";
 				visitButton.innerHTML = "<a href=\"https://margaux-dev.github.io/memory-game/\" id=\"see-site\" target=\"_blank\">Visiter le site</a>"
 				break;
@@ -413,8 +413,8 @@ function gameOn () {
 				bug.timerID = NaN;});
 			document.removeEventListener("keydown", moveMargaux);
 			document.removeEventListener("touchmove", moveMargaux);
-			document.documentElement.style.setProperty("--img", "url(\"images/persoFace.png\")");
-			document.documentElement.style.setProperty("--img2", "url(\"images/persoFace.png\")");
+			document.documentElement.style.setProperty("--img", "url(\"/images/persoFace.png\")");
+			document.documentElement.style.setProperty("--img2", "url(\"/images/persoFace.png\")");
 			scoreDisplay.innerHTML = score;
 			gameMessage.innerHTML = "GAME OVER";
 			gameMessageText.innerHTML = "Dommage... La prochaine fois sera la bonne !";
@@ -432,8 +432,8 @@ function gameOn () {
 						bug.timerID = NaN;});
 					document.removeEventListener("keydown", moveMargaux);
 					document.removeEventListener("touchmove", moveMargaux);
-					document.documentElement.style.setProperty("--img", "url(\"images/persoFace.png\")");
-					document.documentElement.style.setProperty("--img2", "url(\"images/persoFace.png\")");
+					document.documentElement.style.setProperty("--img", "url(\"/images/persoFace.png\")");
+					document.documentElement.style.setProperty("--img2", "url(\"/images/persoFace.png\")");
 					gameMessage.innerHTML = "Victoire !!";
 					gameMessageText.innerHTML = "Bravo !<br>Vous avez découvert mes derniers projets sans vous faire piquer !";
 					gameMessageDiv.style.display = "block";
@@ -512,10 +512,8 @@ restartButton.addEventListener("click", () => {
 // SHOW TRADITIONNAL PORTFOLIO
 function showPortfolio (e) {
 	e.preventDefault();
-	document.location.href = "https://www.margauxdev.com/portfolio"
+	document.location.href = "/index.html"
 }
 skipButton.addEventListener("click", showPortfolio);
 skipTheGame.addEventListener("click", showPortfolio);
 knowMoreButton.addEventListener("click", showPortfolio);
-
-
